@@ -1,18 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
-
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:id="@+id/numbers"
+        android:text="@string/numbers"
+        android:background="#FFC300"
+        android:textColor="#fff"
+        android:paddingRight="18dp"
+        android:paddingLeft="18dp"
+        android:gravity="center_vertical"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="78dp" />
+    <TextView
+        android:id="@+id/family"
+        android:text="@string/family_members"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:textSize="25sp"
+        android:background="#2ECC71"
+        android:textColor="#fff"
+        android:layout_height="78dp" />
+    <TextView
+        android:id="@+id/colors"
+        android:text="@string/colors"
+        android:textSize="25sp"
+        android:gravity="center_vertical"
+        android:background="#8E44AD  "
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="78dp" />
+    <TextView
 
-</android.support.constraint.ConstraintLayout>
+        android:id="@+id/phrases"
+        android:text="@string/phrases"
+        android:background="#3498DB  "
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:gravity="center_vertical"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="78dp" />
+
+</LinearLayout>
